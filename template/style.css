@@ -1,0 +1,49 @@
+.nav-link{
+    color: green
+}
+
+/* Common */
+h1 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #ff8000;
+  }
+
+/* Cards */
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    background-color: #e6e0e0;
+    margin: 1rem;
+
+
+}
+
+/* Image */
+img {
+    border-radius: 0.5rem;
+  }
+img.medium {
+    max-width: 20rem;
+    width: 100%;
+  }
+  
+.rating span {
+    color: #f0c040;
+    margin: 0.1rem;
+  }
