@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+    users: [
+        {
+          name: 'Basir',
+          email: 'admin@example.com',
+          password: bcrypt.hashSync('1234', 8),
+          isAdmin: true,
+        },
+        {
+          name: 'John',
+          email: 'user@example.com',
+          password: bcrypt.hashSync('1234', 8),
+          isAdmin: false,
+        },
+      ],
     products: [
         {
-            _id: '1',
             name: 'Sulwhasoo Concentrate',
             category: 'Treatment',
             image: '/images/Sulwhasoo-concen.jpg',
@@ -13,7 +28,6 @@ const data = {
             description: 'skin product'
         },
         {
-            _id: '2',
             name: 'Sulwhasoo Cream',
             category: 'Cream',
             image: '/images/Sulwhasoo-cream.jpg',
@@ -25,7 +39,6 @@ const data = {
             description: 'Skin product'
         },
         {
-            _id: '3',
             name: 'Sulwhasoo Mask',
             category: 'Mask',
             image: '/images/Sulwhasoo-mask.jpg',
@@ -37,7 +50,6 @@ const data = {
             description: 'Skin product'
         },
         {
-            _id: '4',
             name: 'Laneige Base',
             category: 'MakeUp',
             image: '/images/Laneige-base.jpg',
@@ -49,7 +61,6 @@ const data = {
             description: 'MakeUp product'
         },
         {
-            _id: '5',
             name: 'Laneige Corrector',
             category: 'MakeUp',
             image: '/images/Laneige-corrector.jpg',
@@ -61,7 +72,6 @@ const data = {
             description: 'MakeUp product'
         },
         {
-            _id: '6',
             name: 'Sulwhasoo Set',
             category: 'Gift Set',
             image: '/images/Laneige-set.jpg',
