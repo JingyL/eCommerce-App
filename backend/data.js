@@ -72,12 +72,45 @@ const data = {
             description: 'MakeUp product'
         },
         {
-            name: 'Sulwhasoo Set',
+            name: 'Laneige Set',
             category: 'Gift Set',
             image: '/images/Laneige-set.jpg',
             price: 120,
             countInStock:500,
             brand: 'Laneige',
+            rating: 4.5,
+            numReviews: 50,
+            description: 'skin product'
+        },
+        {
+            name: 'Dr.Jart Balm',
+            category: 'Gift Set',
+            image: '/images/DjBB.jpg',
+            price: 120,
+            countInStock:500,
+            brand: 'Dr.Jart',
+            rating: 4.5,
+            numReviews: 50,
+            description: 'makeup product'
+        },
+        {
+            name: 'Dr.Jart V7',
+            category: 'Gift Set',
+            image: '/images/DjV7.jpg',
+            price: 120,
+            countInStock:500,
+            brand: 'Dr.Jart',
+            rating: 4.5,
+            numReviews: 50,
+            description: 'skin product'
+        },
+        {
+            name: 'Dr.Jart Mask',
+            category: 'Gift Set',
+            image: '/images/DjMask.jpg',
+            price: 120,
+            countInStock:500,
+            brand: 'Dr.Jart',
             rating: 4.5,
             numReviews: 50,
             description: 'skin product'

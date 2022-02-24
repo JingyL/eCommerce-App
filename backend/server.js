@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import userRouter from './routers/userRouter.js';
 import productRouter from './routers/productRouter.js';
+import orderRouter from './routers/orderRouter.js';
 
 
 dotenv.config();
@@ -15,7 +16,10 @@ mongoose.connect(process.env.MONGODB_URL ||'mongodb://localhost:27017/eCommerce'
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
-
+app.use('/api/orders', orderRouter);
+app.get('/api/config/paypal', (req, res) => {
+    res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
+  });
 app.get('/', (req, res)=>{
     res.send('Sever is ready');
 })
